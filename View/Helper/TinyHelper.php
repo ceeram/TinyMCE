@@ -16,7 +16,7 @@
  * @subpackage tiny_m_c_e.views.helpers
  */
 
-class TinyMceHelper extends AppHelper {
+class TinyHelper extends AppHelper {
 
 /**
  * Other helpers used by FormHelper
