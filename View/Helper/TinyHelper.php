@@ -87,6 +87,14 @@ class TinyHelper extends AppHelper {
 		$lines = rtrim($lines);
 		$lines = rtrim($lines, ',');
 		$this->Html->scriptBlock('tinyMCE.init({' . "\n" . $lines . '});' . "\n", array('inline' => false));
+		$this->Html->scriptBlock(
+			"function fileBrowserCallBack(field_name, url, type, win) {
+				browserField = field_name;
+				browserWin = win;
+				window.open('".Helper::url(array('controller' => 'images', 'admin' => true, 'plugin' => 'tiny_mce'))."', 'browserWindow', 'modal,width=632,height=300,scrollbars=yes');
+			}",
+			array('inline' => false)
+		);
 	}
 
 /**
