@@ -94,7 +94,7 @@ class TinyHelper extends AppHelper {
  *
  * @return void
  */
-	public function beforeRender() {
+	public function beforeRender($viewFile) {
 		$this->Html->script('/tiny_mce/js/tiny_mce/tiny_mce.js', false);
 		$this->editor('default');
 	}
