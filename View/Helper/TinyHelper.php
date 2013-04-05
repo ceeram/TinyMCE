@@ -91,7 +91,7 @@ class TinyHelper extends AppHelper {
 			"function fileBrowserCallBack(field_name, url, type, win) {
 				browserField = field_name;
 				browserWin = win;
-				window.open('".Helper::url(array('controller' => 'images', 'admin' => true, 'plugin' => 'tiny_mce'))."', 'browserWindow', 'modal,width=632,height=300,scrollbars=yes');
+				window.open('".Router::url(array('controller' => 'images', 'admin' => true, 'plugin' => 'tiny_mce'))."', 'browserWindow', 'modal,width=960,height=720,scrollbars=yes');
 			}",
 			array('inline' => false)
 		);
