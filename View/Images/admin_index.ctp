@@ -1,10 +1,10 @@
 <?php
 	$this->layout = 'upload_pop_up';
-
+	$full = Router::url('/', true);
 	echo $this->Html->scriptBlock(
 		"function selectURL(url) {
 		if (url == '') return false;
-		url = '".Router::url('/img/uploads/')."' + url;
+		url = '" . $full . "img/uploads/' + url;
 		field = window.top.opener.browserWin.document.forms[0].elements[window.top.opener.browserField];
 		field.value = url;
 		if (field.onchange != null) field.onchange();

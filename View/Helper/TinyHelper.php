@@ -52,6 +52,7 @@ class TinyHelper extends AppHelper {
 		'height'=> '300',
 		'language' => 'nl',
 		'file_browser_callback' => 'fileBrowserCallBack',
+		'remove_script_host' => false,
 		'convert_urls' => true,
 		'relative_urls' => false
 	));
